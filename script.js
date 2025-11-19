@@ -289,7 +289,7 @@ function applyFilters() {
     let workCheck = true;
     const wex = parseInt(row["Work -Ex (in Months)"] || 0);
     if (workEx === "0") workCheck = wex === 0;
-    else if (workEx === "< 12") workCheck = ((wex >= 1) && (wex < 12));
+    else if (workEx === "12") workCheck = ((wex >= 1) && (wex < 12));
     else if (workEx === ">= 12") workCheck = wex >= 12;
     else if (workEx === ">= 24") workCheck = wex >= 24;
     else if (workEx === "36 +") workCheck = wex > 36;
