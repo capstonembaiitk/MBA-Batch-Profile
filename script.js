@@ -292,7 +292,7 @@ function applyFilters() {
     else if (workEx === "12") workCheck = ((wex >= 1) && (wex < 12));
     else if (workEx === ">= 12") workCheck = wex >= 12;
     else if (workEx === ">= 24") workCheck = wex >= 24;
-    else if (workEx === "36 +") workCheck = wex > 36;
+    else if (workEx === "36+") workCheck = wex > 36;
 
     let companyCheck = true;
     if (recruiterCompany) {
